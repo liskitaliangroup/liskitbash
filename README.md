@@ -1,5 +1,6 @@
 #Liskit Bash
-This is a very simple script that helps me to update or install a brand new Lisk client on my machine
+This is a very simple script that wrap the official Lisk installation script.
+It helps me to update or install a brand new Lisk client on my machines.
 
 ##Functions
 The script actually accepts two commands
@@ -21,5 +22,5 @@ For instance
 ##ToDo
 This is a working progress I will improve it over time :)
 
-    - code improvements (absolute/relative paths || use install func inside update || use defaults for curl url)
+    - code improvements (absolute/relative paths || use install func inside update || use defaults for wget url)
     - test it actually :D
