@@ -33,7 +33,7 @@ install ()
     echo -e ${GREEN}Running Lisk binary install script...${NC}
     bash installLisk.sh install -r $NETWORK
     rm installLisk.sh
-    echo ${GREEN}Lisk sould be installed...${NC}
+    echo -e ${GREEN}Lisk sould be installed...${NC}
 }
 
 # Updating Existing Lisk Version
