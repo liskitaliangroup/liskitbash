@@ -1,12 +1,19 @@
 #!/bin/bash
 
 #############################################################
-# Lisk Installation and Update Script Wrapper               #
-# by: andreafspeziale                                       #
-# Date: 18/08/2016                                          #
-# $1 command                                                #
-# $2 network type                                           #
-# $3 link - not used yet                                    #
+# LISK INSTALLATION AND UPDATE SCRIPT WRAPPER               #
+# BY: andreafspeziale                                       #
+# DATE: 18/08/2016                                          #
+#                                                           #
+# SYNTAX: bash liskitbash COMMAND NETWORK_TYPE              #
+#                                                           #
+# COMMANDS                                                  #
+#   - install                                               #
+#   - update                                                #
+#                                                           #
+# OPTION                                                    #
+#   - main                                                  #
+#   - test                                                  #
 #############################################################
 
 # Options
