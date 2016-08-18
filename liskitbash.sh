@@ -22,29 +22,27 @@ NC='\033[0m'
 install ()
 {
     echo -e ${GREEN}Downloading Lisk binary install script...${NC}
-    # wget https://downloads.lisk.io/scripts/installLisk.sh
-    # echo -e ${GREEN}Running Lisk binary install script...${NC}
-    # bash installLisk.sh install -r $NETWORK
-    # rm installLisk.sh
-    # echo ${GREEN}Lisk sould be installed...${NC}
+    wget https://downloads.lisk.io/scripts/installLisk.sh
+    echo -e ${GREEN}Running Lisk binary install script...${NC}
+    bash installLisk.sh install -r $NETWORK
+    rm installLisk.sh
+    echo ${GREEN}Lisk sould be installed...${NC}
 }
 
 # Updating Existing Lisk Version
 update ()
 {
-    echo Stopping Lisk...
+    echo -e ${GREEN}Updating Lisk and stopping current installation...${NC}
     cd lisk-$NETWORK
     bash lisk.sh stop
     cd ..
-    echo Deleting Lisk
+    echo -e ${GREEN}Deleting Lisk installation folder...${NC}
     rm -r lisk-$NETWORK
-    rm install installLisk.sh
-    echo Preparing system 4 Lisk upgrade
+    echo -e ${GREEN}Preparing system 4 Lisk upgrade...${NC}
     sudo apt-get --purge remove postgresql postgresql postgresql-client postgresql-client postgresql-client-common postgresql-common postgresql-contrib postgresql-contrib
     rm -rf /var/lib/postgresql/
     rm -rf /var/log/postgresql/
     rm -rf /etc/postgresql/
-    echo Reinstalling Lisk
     install
 }
 
