@@ -27,6 +27,7 @@ This is a working progress I will improve it over time :)
     - code improvements (absolute/relative paths || use defaults for wget url)
     - test it actually :D (it seems to work properly)
     - add a command to just uninstall everything
+    - check for some progress bar and do not print anything else
 
 ##Troubleshooting
 Lisk installation guide suggests the following LOCAL options:
