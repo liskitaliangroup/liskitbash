@@ -1,44 +1,53 @@
 #!/bin/bash
 
-#$1 command
-#$2 type
-#$3 link
+#############################################################
+# Lisk Installation and update Script                       #
+# by: andreafspeziale                                       #
+# Date: 18/08/2016                                          #
+# $1 command                                                #
+# $2 network type                                           #
+# $3 link - not used yet                                    #
+#############################################################
+
+# Commands
+COMMAND=$1
+NETWORK=$2
+
+# Colours
+GREEN='\033[0;32m'
+NC='\033[0m'
 
 # Installing a brand new version
 install ()
 {
-    echo install
-    echo $1
-    echo $2
-    echo $3
+    echo -e ${GREEN}Downloading Lisk binary install script...${NC}
+    wget https://downloads.lisk.io/scripts/installLisk.sh
+    echo -e ${GREEN}Running Lisk binary install script...${NC}
+    bash installLisk.sh install -r $NETWORK
+    echo ${GREEN}Lisk sould be installed...${NC}
 }
 
 # Updating existing Lisk version
 update ()
 {
-    echo update
-    echo $1
-    echo $2
-    echo $3
-    # echo Stopping Lisk...
-    # cd lisk-$2
-    # bash lisk.sh stop
-    # cd ..
-    # echo Deleting Lisk
-    # rm -r lisk-$2
-    # rm install installLisk.sh
-    # echo Preparing system 4 Lisk upgrade
-    # sudo apt-get --purge remove postgresql postgresql postgresql-client postgresql-client postgresql-client-common postgresql-common postgresql-contrib postgresql-contrib
-    # rm -rf /var/lib/postgresql/
-    # sudo rm -rf /var/log/postgresql/
-    # sudo rm -rf /etc/postgresql/
-    # echo Reinstalling Lisk
-    # wget https://downloads.lisk.io/scripts/installLisk.sh
-    # install()
+    echo Stopping Lisk...
+    cd lisk-$NETWORK
+    bash lisk.sh stop
+    cd ..
+    echo Deleting Lisk
+    rm -r lisk-$NETWORK
+    rm install installLisk.sh
+    echo Preparing system 4 Lisk upgrade
+    sudo apt-get --purge remove postgresql postgresql postgresql-client postgresql-client postgresql-client-common postgresql-common postgresql-contrib postgresql-contrib
+    rm -rf /var/lib/postgresql/
+    rm -rf /var/log/postgresql/
+    rm -rf /etc/postgresql/
+    echo Reinstalling Lisk
+    install
 }
 
 # Checking Options
-case $1 in
+case $COMMAND in
 "install")
   install
   ;;
