@@ -6,9 +6,9 @@ There is a description also on the top of the script ;)
 
 Use it in the same folder of the lisk-main or test folder
 For instance
-    --/something
-                |-- liskitbash.sh
-                |-- /lisk-test
+    - --/something
+        |-- liskitbash.sh
+        |-- /lisk-test
 
 ##Functions
 The script actually accepts two commands
