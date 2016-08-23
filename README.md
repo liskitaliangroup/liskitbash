@@ -4,6 +4,12 @@ It helps me to update or install a brand new Lisk client on my machines.
 
 There is a description also on the top of the script ;)
 
+Use it in the same folder of the lisk-main or test folder
+For instance
+--/something
+            |-- liskitbash.sh
+            |-- /lisk-test
+
 ##Functions
 The script actually accepts two commands
 
@@ -24,8 +30,7 @@ For instance
 ##ToDo
 This is a working progress I will improve it over time :)
 
-    - code improvements (absolute/relative paths || use defaults for wget url)
-    - test it actually :D (it seems to work properly)
+    - code improvements (use defaults for wget url)
     - add a command to just uninstall everything
     - check for some progress bar and do not print anything else
 
