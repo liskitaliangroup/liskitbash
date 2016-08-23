@@ -4,7 +4,7 @@ It helps me to update or install a brand new Lisk client on my machines.
 
 There is a description also on the top of the script ;)
 
-Use it in the same folder of the lisk-main or test folder<br>
+Use it in the same folder of the lisk-main or test folder<br><br>
 For instance<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;--/something<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- liskitbash.sh<br>
