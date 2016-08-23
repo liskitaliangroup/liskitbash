@@ -4,10 +4,10 @@ It helps me to update or install a brand new Lisk client on my machines.
 
 There is a description also on the top of the script ;)
 
-Use it in the same folder of the lisk-main or test folder
-For instance
-&nbsp;&nbsp;&nbsp;&nbsp;--/something
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- liskitbash.sh
+Use it in the same folder of the lisk-main or test folder<br>
+For instance<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;--/something<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- liskitbash.sh<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- /lisk-test
 
 ##Functions
