@@ -42,6 +42,8 @@ update ()
     echo -e ${GREEN}Updating Lisk and stopping current installation...${NC}
     cd lisk-$NETWORK
     bash lisk.sh stop
+    echo -e ${GREEN}Backup config.json...${NC}
+    cp config.json ../config-`date +'%d_%m_%Y'`.json
     cd ..
     echo -e ${GREEN}Deleting Lisk installation folder...${NC}
     rm -r lisk-$NETWORK
