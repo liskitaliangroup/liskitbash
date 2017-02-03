@@ -8,9 +8,9 @@ There is a description also on the top of the script ;)
 
 Use it in the same folder of the lisk-main or test folder<br><br>
 For instance<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;--/something<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- liskitbash.sh<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- /lisk-test
+&nbsp;&nbsp;&nbsp;&nbsp;../HOME_FOLDER<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;../HOME_FOLDER/liskitbash.sh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;../HOME_FOLDER/lisk-test
 
 The update command will also create a copy of your config.json named with the current day so you can easily restore your access lists and more
 
