@@ -12,6 +12,8 @@ For instance<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- liskitbash.sh<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- /lisk-test
 
+The update command will also create a copy of your config.json named with the current day so you can easily restore your access lists and more
+
 ##Functions
 The script actually accepts two commands
 
