@@ -1,5 +1,5 @@
 #Liskit Bash
-###With love by liskit delegate, for donation 10310263204519541551L
+> With love by liskit delegate, for donation 10310263204519541551L
 
 This is a very simple script that wrap the official Lisk installation script.
 It helps me to update or install a brand new Lisk client on my machines.
