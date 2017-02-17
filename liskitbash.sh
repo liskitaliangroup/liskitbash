@@ -34,6 +34,7 @@ install ()
     bash installLisk.sh install -r $NETWORK
     cd lisk-$NETWORK
     bash lisk.sh coldstart
+    cd ..
     rm installLisk.sh
     echo -e ${GREEN}Lisk sould be installed...${NC}
 }
